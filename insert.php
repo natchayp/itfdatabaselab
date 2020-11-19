@@ -15,7 +15,7 @@
   <?php
 
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'databaselabitf.mysql.database.azure.com', 'filmzz@databaselabitf', 'film8844@', 'filmDATAB', 3306);
+mysqli_real_connect($conn, 'itfdatabaselab.mysql.database.azure.com', 'Natcha@itfdatabaselab', 'Kms29853', 'ITFLab', 3306);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -42,7 +42,7 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 if ($done)
 {
-    header("Location: https://labitf2.azurewebsites.net/show.php");
+    header("Location: https://finallab.azurewebsites.net/show.php");
     exit();
 }
 ?>
